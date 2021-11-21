@@ -151,7 +151,7 @@ if __name__ == "__main__" :
     """,
     unsafe_allow_html=True
     )
-    file = st.file_uploader(" ")
+    file = st.file_uploader("", "txt")
     if st.button("Submit"):
         doc = str(file.read(),"utf-8")
         if not doc:
