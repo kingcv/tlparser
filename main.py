@@ -155,11 +155,11 @@ if __name__ == "__main__" :
     st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: #1292e2;
+        background-color: #f44336;
         color:black;
     }
     div.stButton > button:hover {
-        background-color: #ecf6fd;
+        background-color: white;
         color:black;
         }
     </style>""", unsafe_allow_html=True)
