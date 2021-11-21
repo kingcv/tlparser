@@ -151,6 +151,19 @@ if __name__ == "__main__" :
     """,
     unsafe_allow_html=True
     )
+    
+    st.markdown("""
+    <style>
+    div.stButton > button:first-child {
+        background-color: #0099ff;
+        color:#ffffff;
+    }
+    div.stButton > button:hover {
+        background-color: #00ff00;
+        color:#ff0000;
+        }
+    </style>""", unsafe_allow_html=True)
+    
     file = st.file_uploader("", "txt")
     if st.button("Submit"):
         doc = str(file.read(),"utf-8")
