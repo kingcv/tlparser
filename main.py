@@ -138,7 +138,7 @@ def number_of_mins(data):
 
 if __name__ == "__main__" :
 
-    st.title("Streamlit Webapp for TL parser")
+    st.title("TL parser")
     background = "image.jpg"
     background_ext = "jpg"
     st.markdown(
@@ -151,7 +151,7 @@ if __name__ == "__main__" :
     """,
     unsafe_allow_html=True
     )
-    file = st.file_uploader(" Upload the TimeLog file here")
+    file = st.file_uploader()
     if st.button("Generate"):
         doc = str(file.read(),"utf-8")
         if not doc:
