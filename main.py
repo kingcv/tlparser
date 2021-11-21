@@ -166,6 +166,8 @@ if __name__ == "__main__" :
     
     file = st.file_uploader("", "txt")
     if st.button("Submit"):
+        if not file.read() 
+            st.write("Not Found")
         doc = str(file.read(),"utf-8")
         if not doc:
             st.write("Not Found")
