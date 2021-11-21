@@ -139,8 +139,8 @@ def number_of_mins(data):
 if __name__ == "__main__" :
 
     st.title("Streamlit Webapp for TL parser")
-    #background = "image.jpg"
-    #background_ext = "jpg"
+    background = "image.jpg"
+    background_ext = "jpg"
     st.markdown(
     f"""
     <style>
