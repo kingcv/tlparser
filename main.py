@@ -156,11 +156,11 @@ if __name__ == "__main__" :
     <style>
     div.stButton > button:first-child {
         background-color: #1292e2;
-        color:#1292e2;
+        color:black;
     }
     div.stButton > button:hover {
         background-color: #ecf6fd;
-        color:#ecf6fd;
+        color:black;
         }
     </style>""", unsafe_allow_html=True)
     
