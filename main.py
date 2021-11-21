@@ -151,11 +151,11 @@ if __name__ == "__main__" :
     """,
     unsafe_allow_html=True
     )
-    file = st.file_uploader()
-    if st.button("Generate"):
+    file = st.file_uploader(" ")
+    if st.button("Submit"):
         doc = str(file.read(),"utf-8")
         if not doc:
-            st.write("File Not Found")
+            st.write("Not Found")
         else:
 
             s = doc[0:8]
@@ -166,7 +166,7 @@ if __name__ == "__main__" :
                 number_of_mins = number_of_mins(formatted)
                 output(number_of_mins)
             else:
-                st.write(" No Time Log mentioned")
+                st.write(" Time Log not mentioned")
     
     
     
